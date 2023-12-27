@@ -34,7 +34,7 @@ function LoginForm() {
         toast.error("enter valid email & password  🙁");
       } 
       else {
-        toast.error("please register than login🙁");
+        toast.error("please check email & password or register than login🙁");
       }
       console.log(error)
 
