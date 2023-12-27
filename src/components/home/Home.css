@@ -25,6 +25,7 @@ border-radius: 5px;
 box-sizing: border-box;
 box-shadow: 0 8px 32px 0 rgba(143, 149, 226, 0.3);
 background: pink;
+  color:black
 border: none;
 outline: none; 
 }
@@ -90,7 +91,7 @@ h1{
       text-align: center;
       width: 70%;
       margin-top: 50%;
-      margin-left: 60px;
+      margin-left: 40px;
   
   }
 
