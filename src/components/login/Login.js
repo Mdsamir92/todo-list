@@ -30,11 +30,12 @@ function LoginForm() {
     }
 
     catch (error) {
-      if (!email || !password) {
-        toast.error("enter valid data 🙁");
-      }
+  if (!email || !password) {
+        toast.error("enter valid email & password  🙁");
+      } 
       else {
-        toast.error("please check email and password 🙁")
+        toast.error("please register than login🙁")
+      }
       }
       console.log(error)
 
