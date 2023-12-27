@@ -52,7 +52,7 @@ const navigate = useNavigate("");
         <br />
         <p style={{ color: "red" }}>{error && error}</p>
        
-       <button type="submit" onClick={handleSubmit} className='btn'>Register</button>
+       <button type="submit" onClick={handleSubmit} className='reg-btn'>Register</button>
      
       </form>
       <br />
