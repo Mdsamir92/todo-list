@@ -1,24 +1,16 @@
 .form-container {
-    /* background: rgba(218, 38, 173, 0.50); */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.30);
-    box-shadow: -10px 10px 10px 5px grey;
-    backdrop-filter: blur(20px);
-    padding: 50px 80px;
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 25px;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-  }
-  input{
-  
-      margin: 10px;
-      padding: 7px;
-      border-radius: 12px;
-   
-  }
-   a{
-    text-decoration: none;
-  }
+  box-shadow: -10px 10px 10px 5px grey;
+  backdrop-filter: blur(20px);
+  padding: 50px 80px;
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 25px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+ a{
+  text-decoration: none;
+}
