@@ -1,5 +1,5 @@
 .form-container {
-  background: rgba(19, 53, 165, 0.20);
+  background: rgba(19, 53, 165, 0.10);
 
   box-shadow: -10px 10px 10px 5px grey;
   backdrop-filter: blur(20px);
@@ -74,6 +74,7 @@ input:focus {
   }
 
   .btn {
+    padding:7px;
     width: 60%;
   }
 
