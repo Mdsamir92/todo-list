@@ -10,15 +10,32 @@ function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
 
 
 const navigate = useNavigate("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+ 
+    if (!name || !email || !password) {
+      toast.error("Enter valid name, email & password 🙁");
+      return;
+   }
+  else if(name.length<3){
+     toast.error("Name requires a minimum of 3 characters");
+     return;
+   }else if (email.length < 13) { 
+     toast.error("Enter a valid email address");
+     return;
+   }
+   else if (password.length < 5) {
+     toast.error("Password requires a minimum of 5 characters");
+     return ;
+   }
+  
 
-
+  
    axios.post("https://login-register-form-go9w.onrender.com/register", 
    { name,email,password }
 
@@ -26,13 +43,22 @@ const navigate = useNavigate("");
     toast.success("Register successfully😍")
     navigate("/");
   })
-    .catch(() => {
-    if (!name || !email || !password){
-      toast.error("enter valid data 🙁 "); 
-      } else{
-     toast.error("email already registered 🙁")
-      }
- })
+   
+  .catch(() => {
+     
+    if (!name || !email || !password) {
+      toast.error("Enter valid name, email & password 🙁");
+      return;
+   }
+   
+   else
+     {
+      toast.error("Email already registered 🙁");
+      return ;
+     }
+})
+
+
 
 }
 
@@ -45,12 +71,12 @@ const navigate = useNavigate("");
         <input type="text" value={name} placeholder="enter name" onChange={(e) => setName(e.target.value)} />
         <br />
         <label>Email:</label> <br />
-        <input type="text" value={email} placeholder="enter email" onChange={(e) => setEmail(e.target.value)} />
+        <input type="email" value={email} placeholder="enter email" onChange={(e) => setEmail(e.target.value)} />
         <br />
         <label>Password:</label> <br />
         <input type="password" value={password} placeholder="enter password" onChange={(e) => setPassword(e.target.value)} />
         <br />
-        <p style={{ color: "red" }}>{error && error}</p>
+        {/* <p style={{ color: "red" }}>{error && error}</p> */}
        
        <button type="submit" onClick={handleSubmit} className='reg-btn'>Register</button>
      
