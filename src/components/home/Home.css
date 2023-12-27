@@ -1,8 +1,6 @@
-
 .container{
   background: rgba(210, 253, 18, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.30);
-  box-shadow: -10px 10px 10px 5px grey;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(8px);
   justify-content: center;
@@ -14,6 +12,7 @@
   border-radius: 10px;
 
 }
+
 
 .container input[type=text],select{
 width: 50%;
