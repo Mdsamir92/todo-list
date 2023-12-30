@@ -1,8 +1,6 @@
-/* .head {
+.head {
   background-image: url("https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/960x0.jpg?height=474&width=711&fit=bounds");
-  background-size: cover;
-  background-position: center;
-} */
+}
 
 .container {
   background: rgba(210, 253, 18, 0.1);
