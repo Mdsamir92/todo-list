@@ -20,7 +20,7 @@ function LoginForm() {
       const res = await axios.post("https://login-register-form-go9w.onrender.com/login",
         { email, password },)
 
-   
+
       if (res.data) {
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('username', res.data.email);
@@ -30,11 +30,11 @@ function LoginForm() {
     }
 
     catch (error) {
-  if (!email || !password) {
+      if (!email || !password) {
         toast.error("enter valid email & password  🙁");
-      } 
+      }
       else {
-        toast.error("please check email & password or register than login🙁");
+        toast.error("please check email & password or register than login🙁")
       }
       console.log(error)
 
@@ -48,6 +48,14 @@ function LoginForm() {
 
   return (
     <div className='form-container'>
+      <h2>SignIn</h2>
+
+      <div class="social-icons">
+        <a href="#" ><i class="fa-brands fa-google"></i> </a>
+        <a href="#" ><i class="fa-brands fa-facebook"></i> </a>
+        <a href="#" ><i class="fa-brands fa-github"></i> </a>
+       
+      </div>
       <form>
         <label>Email:</label> <br />
         <input type="text" value={email} placeholder="enter email" onChange={(e) => setEmail(e.target.value)} />
