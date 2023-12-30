@@ -63,7 +63,7 @@ function LoginForm() {
         <label>Password:</label> <br />
         <input type="password" value={password} placeholder="enter password" onChange={(e) => setPassword(e.target.value)} />
         <br />
-        <button type="submit" onClick={handleSubmit} className='btn'>Login</button>
+        <button type="submit" onClick={handleSubmit} className='login-btn'>Login</button>
         {/* <p style={{color:"red"}}>{error && error}</p> */}
       </form>
       <br />
