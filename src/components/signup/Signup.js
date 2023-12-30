@@ -65,7 +65,14 @@ const navigate = useNavigate("");
 
   return (
     <div className='form-container'>
-  
+   <h2>SignUp</h2>
+
+   <div class="social-icons">
+        <a href="#" ><i class="fa-brands fa-google"></i> </a>
+        <a href="#" ><i class="fa-brands fa-facebook"></i> </a>
+        <a href="#" ><i class="fa-brands fa-github"></i> </a>
+    
+      </div>
       <form>
         <label>Name:</label> <br />
         <input type="text" value={name} placeholder="enter name" onChange={(e) => setName(e.target.value)} />
