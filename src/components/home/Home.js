@@ -47,6 +47,7 @@ function Home() {
       return i != id;
     });
     setlistData(updatedlistData);
+     toast.error("Remove successfully");
   }
 
   useEffect(() => {
