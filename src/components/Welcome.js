@@ -31,7 +31,7 @@ function Welcome() {
 
             <button className='btn-logout' onClick={logout}>Logout</button>
 
-            <span style={{ textAlign: "center" }}><h1>Welcome </h1><h3>{username}</h3></span>
+            <span style={{ textAlign: "center" }}><h1>Welcome  {username}</h1></span>
 
         </div>
     )
