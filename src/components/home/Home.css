@@ -71,8 +71,6 @@ button {
   width: 50%;
   border-radius: 5px;
   margin-left: 120px;
-
-
 }
 
 h1 {
@@ -107,7 +105,7 @@ h1 {
     text-align: center;
     width: 60%;
     margin-top: 30%;
-/*     margin-left: 30px; */
+    margin-left: 30px;
 
   }
 
