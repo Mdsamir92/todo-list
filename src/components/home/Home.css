@@ -1,13 +1,10 @@
-/* .head {
-  background-image: url("https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/960x0.jpg?height=474&width=711&fit=bounds");
-}
- */
+
 .container {
-   border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgb(255, 255, 255);
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px; 
   background: rgba(255, 255, 255, 0.712);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.30);
-  box-shadow: -10px 10px 10px 5px grey;
+/*   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.30);
+  box-shadow: -10px 10px 10px 5px grey; */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(8px);
   justify-content: center;
