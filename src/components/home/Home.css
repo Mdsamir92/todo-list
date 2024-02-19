@@ -97,15 +97,17 @@ h1 {
 
 
   .container {
-    background: rgba(230, 235, 209, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(177, 181, 228, 0.30);
+/*     background: rgba(230, 235, 209, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(177, 181, 228, 0.30); */
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px; 
+    background: rgba(255, 255, 255, 0.712);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(8px);
     justify-content: center;
     text-align: center;
-    width: 65%;
+    width: 100%;
     margin-top: 30%;
-    margin-left: 30px;
+/*     margin-left: 30px; */
 
   }
 
