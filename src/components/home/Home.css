@@ -1,6 +1,4 @@
-body{
-  overflow-x:hidden;
-}
+
 .container {
   border: 5px solid rgb(255, 255, 255);
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px; 
@@ -97,8 +95,7 @@ h1 {
   .container {
     box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px; 
     background: rgba(255, 255, 255, 0.712);
-    width: 90%;
-
+    width: 85%;
     margin-top: 30%;
     margin-left: 10px;
 
