@@ -49,10 +49,10 @@ function LoginForm() {
 
       <form>
         <label>Email:</label> <br />
-        <input type="text" value={email} required  placeholder="enter email" onChange={(e) => setEmail(e.target.value)} />
+        <input type="text" value={email} required  placeholder="enter email💌" onChange={(e) => setEmail(e.target.value)} />
         <br />
         <label>Password:</label> <br />
-        <input type="password" value={password} required placeholder="enter password" onChange={(e) => setPassword(e.target.value)} />
+        <input type="password" value={password} required placeholder="enter password🔐" onChange={(e) => setPassword(e.target.value)} />
         <br />
         <input class="checkbox" type="checkbox" required /> Keep me signed in 
         <button type="submit" onClick={handleSubmit} className='login-btn'>Login</button>
