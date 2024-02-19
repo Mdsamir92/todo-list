@@ -95,7 +95,7 @@ h1 {
   .container {
     box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px; 
     background: rgba(255, 255, 255, 0.712);
-    width: 70%;
+    width: 90%;
 
     margin-top: 30%;
     margin-left: 10px;
@@ -120,8 +120,8 @@ h1 {
     font-size: 20px;
   }
 
-  input::placeholder {
+/*   input::placeholder {
     font-size: 10px;
-  }
+  } */
 
 }
