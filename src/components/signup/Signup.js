@@ -10,13 +10,15 @@ function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [error, setError] = useState("");
 
 
   const navigate = useNavigate("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // validate using regex 
+   let emailRegex = /^[A-Za-z]+[\d]+[@]+[gmail]+[.]com$/.test(email);
 
     if (!name || !email || !password) {
       toast.error("Enter valid name, email & password 🙁");
@@ -25,17 +27,14 @@ function Signup() {
     else if (name.length < 3) {
       toast.error("Name requires a minimum of 3 characters");
       return;
-    } else if (email.length < 13) {
-      toast.error("Enter a valid email address");
+    } else if (email.length < 14 || !emailRegex) {
+      toast.error("Enter a valid email address or use @gmail.com");
       return;
     }
-    else if (password.length < 5) {
+    else if (password.length < 5 ) {
       toast.error("Password requires a minimum of 5 characters");
       return;
     }
-
-
-
     axios.post("https://login-register-form-go9w.onrender.com/register",
       { name, email, password }
 
@@ -56,9 +55,6 @@ function Signup() {
           return;
         }
       })
-
-
-
   }
 
 
