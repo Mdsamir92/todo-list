@@ -90,12 +90,10 @@ h1 {
 
 @media (max-width:768px) {
 
-
-
   .container {
     box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px; 
     background: rgba(255, 255, 255, 0.712);
-    width: 85%;
+    width: 90%;
     margin-top: 30%;
     margin-left: 10px;
 
@@ -104,12 +102,10 @@ h1 {
   .listdata {
     font-size: 15px;
     width: 60%;
-    padding: 8px;
     margin-left: 10px;
   }
 
   .btn-pos {
-
     position: relative;
     left: 27%;
 
@@ -119,8 +115,8 @@ h1 {
     font-size: 20px;
   }
 
-/*   input::placeholder {
-    font-size: 10px;
-  } */
+
+
+
 
 }
